@@ -30,9 +30,9 @@ export function* authUserSaga(action) {
         password: action.password,
         returnSecureToken: true
     }
-    let url = 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyCrMe6sDLLm-9O_UULBARgtqg6-NPJdmB4'
+    let url = 'your public url'
     if (!action.isSignUp) {
-        url = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCrMe6sDLLm-9O_UULBARgtqg6-NPJdmB4'
+        url = 'your public url'
     }
 
     try {
